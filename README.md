@@ -12,7 +12,9 @@ RestaurantCollection
 - [x] Lista restaurant
 - [x] Busca restaurant por Gusto
 
-
+## CI/CD
+  - Se implemento Gihub Action que permite desplegar el contenedor a un repositorio especifico
+  
 
 ## Running the app
 
