@@ -16,13 +16,5 @@ export class RestaurantsService {
   findAllByTag(tag: string): Promise<Array<RestaurantDto>> {
     return this.repository.getByTag(tag);
   }
-  findOne(id: number) {
-    return `This action returns a #${id} restaurant`;
-  }
 
-
-
-  remove(id: number) {
-    return `This action removes a #${id} restaurant`;
-  }
 }

@@ -1,0 +1,132 @@
+[
+    {
+        "id": "1",
+        "name": "Restaurant 1",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant1@dominio.com",
+        "tags": [
+            "Pizza",
+            "Pasta",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Restaurant 2",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant2@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pasta",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Restaurant 3",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant3@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Restaurant 4",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant4@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Restaurant 5",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant5@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Restaurant 6",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant6@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Restaurant 7",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Restaurant 8",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant3@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Restaurant 9",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant3@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Restaurant 10",
+        "address": "Colombia 1234",
+        "phone": "1234556",
+        "email": "restaurant3@dominio.com",
+        "tags": [
+            "Parrilla",
+            "Pollo",
+            "Empanadas",
+            "Milanesas"
+        ]
+    }
+]

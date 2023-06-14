@@ -4,9 +4,7 @@ import { v4 as uuid } from 'uuid';
 
 import { CreateRestaurantDto, RestaurantDto } from './dto';
 
-
-import { ScanInput, QueryInput } from 'aws-sdk/clients/dynamodb';
-import { TABLE_NAME_TOKEN } from 'src/database/restaurant.module';
+import { TABLE_NAME_TOKEN } from '../database/restaurant.module';
 
 
 @Injectable()
