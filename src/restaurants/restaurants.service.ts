@@ -13,8 +13,8 @@ export class RestaurantsService {
   findAll(): Promise<Array<RestaurantDto>> {
     return this.repository.getAll();
   }
-  findAllByTag(tag: string): Promise<Array<RestaurantDto>> {
-    return this.repository.getByTag(tag);
+  findAllByTag(tags: string[]): Promise<Array<RestaurantDto>> {
+    return this.repository.getByTags(tags);
   }
 
 }

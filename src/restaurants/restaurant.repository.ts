@@ -18,24 +18,30 @@ export class RestaurantsRepository {
     const result = await this.client.scan({ TableName: this.tableName }).promise();
     return (result.Items as Array<RestaurantDto>);
   }
-  async getByTag(tag: string): Promise<Array<RestaurantDto>> {
-    const params = {
-      ExpressionAttributeValues: {
-        ':tag': {
-          "S": tag.toUpperCase
-        }
-      },
-      TableName: this.tableName,
+  async getByTags(tags: string[]): Promise<Array<RestaurantDto>> {
+    const results: RestaurantDto[] = [];
+    for (const tag of tags) {
+      const params = {
+        ExpressionAttributeValues: {
+          ':tag': {
+            "S": tag.toUpperCase
+          }
+        },
+        TableName: this.tableName,
 
-      FilterExpression: '#tags = :tag',
-      ExpressionAttributeNames: { '#tags': 'tags' },
-    };
-    console.log(params, tag);
+        FilterExpression: '#tags = :tag',
+        ExpressionAttributeNames: { '#tags': 'tags' },
+      };
 
-    const result = await this.client.scan(params).promise();
-    console.log(result);
 
-    return (result.Items as Array<RestaurantDto>);
+      const result = await this.client.scan(params).promise();
+
+      results.push(...(result.Items as Array<RestaurantDto>));
+    }
+
+    return [...new Map(results.map(item =>
+      [item["id"], item])).values()];
+
   }
   async get(id: string): Promise<RestaurantDto> {
     const { Item } = await this.client

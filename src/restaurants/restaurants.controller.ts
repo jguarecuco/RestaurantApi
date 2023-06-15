@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Put, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Put, Param, Delete, Query } from '@nestjs/common';
 import { RestaurantsService } from './restaurants.service';
 import { CreateRestaurantDto } from './dto/create-restaurant.dto';
 import { RestaurantDto } from './dto/restaurant.dto';
@@ -18,9 +18,9 @@ export class RestaurantsController {
     return await this.restaurantsService.findAll();
   }
 
-  @Get('tag/:tag')
-  findAllByTag(@Param('tag') tag: string) {
-    return this.restaurantsService.findAllByTag(tag);
+  @Get('tag')
+  findAllByTag(@Query('tags') tags: string[]) {
+    return this.restaurantsService.findAllByTag(tags);
   }
 
 

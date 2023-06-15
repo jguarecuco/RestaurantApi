@@ -15,6 +15,9 @@ RestaurantCollection
 ## CI/CD
   - Se implemento Gihub Action que permite desplegar el contenedor a un repositorio especifico
   
+## Insert Datos a la collection
+  Para hacer un restore collection se debe ejecutar este comando desde la consola (Favor asegurarse de tener el archivo dentro del directorio desde donde se ejecute el comando).
+  aws dynamodb batch-write-item --request-items "$(cat DUMP.json)"
 
 ## Running the app
 
